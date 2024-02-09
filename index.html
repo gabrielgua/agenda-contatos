@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="material-symbols-rounded">alternate_email</span>
+            <h1>Agenda de contatos</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="form-contatos">
+
+            <div class="input-group">
+                <label for="nome-contato">Nome do contato</label>
+                <input id="nome-contato" type="text" required placeholder="Ex.: João da Silva" />
+            </div>
+            <div class="input-group">
+                <label for="numero-contato">Número do contato</label>
+                <input id="numero-contato" 
+                       type="tel"  
+                       maxlength="15"
+                       pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})"
+                       placeholder="Ex.: (99) 99999-9999"
+                       required />
+            </div>
+            <button type="submit">
+                <p>Cadastrar</p>
+                <span class="material-symbols-rounded">person_add</span>
+            </button>
+        </form>
+    </div>
+
+    <div class="container">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome do contato</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- content goes here! -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <a href="https://github.com/gabrielgua">gabrielgua</a></p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

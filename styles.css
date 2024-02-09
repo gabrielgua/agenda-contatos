@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container {
+    margin-inline: auto;
+    margin-block: 2rem;
+    width: min(760px, 100% - 4rem);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-block-start: 5rem;
+}
+
+header .container span {
+    font-size: 32px;
+}
+
+form {
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    border: 1px solid black;
+}
+
+form .input-group {
+    width: 100%;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    
+    padding: .5rem;
+    border: 2px solid black;
+}
+
+form button {
+    gap: 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    font-size: inherit;
+    font-weight: bold;
+
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 78, 194);
+}
+
+table  {
+    width: 100%;
+}
+
+thead th:first-child {
+    padding-inline: .5rem;
+}
+
+thead th {
+    text-align: left;
+    padding-block: 1rem;
+    border-block-end: 2px solid rgb(0, 102, 255);
+}
+
+tbody td {
+    padding-block: .5rem;
+    border-block-end: 1px solid rgba(0, 0, 0, .2);
+}
+
+@media (width <= 670px) {
+    form {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
